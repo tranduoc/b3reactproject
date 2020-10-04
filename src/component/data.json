@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Hai Binh", "password": "123", "phone": "0978" },
+  { "id": 2, "name": "Thanh Binh", "password": "123", "phone": "0978" },
+  { "id": 3, "name": "Thanh Lam", "password": "123", "phone": "0978" },
+  { "id": 4, "name": "Binh An", "password": "123", "phone": "0978" },
+  { "id": 5, "name": "Nguyen Vu ", "password": "123", "phone": "0978" }
+]
