@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class HandleEvent extends Component {
+class AddUser extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,13 +18,13 @@ class HandleEvent extends Component {
     });
   };
 
-  handleLogin = () => {
+  addUser = () => {
     const { name, password, phone } = this.state;
-    this.props.getInfo({
-      name,
-      password,
-      phone,
-    });
+    // let name = this.state.name;
+    // let password = this.state.password;
+    // let phone = this.state.phone;
+
+    this.props.getUserInfo1(name, password, phone);
   };
 
   render() {
@@ -74,19 +74,14 @@ class HandleEvent extends Component {
                   </div>
                 </div>
                 <button
-                  onClick={() => this.handleLogin()}
+                  onClick={() => this.addUser()}
                   type="button"
                   className="btn btn-warning"
                 >
-                  Login
+                  Add user
                 </button>
               </div>
             </div>
-          </div>
-          <div className="col-6 text-center">
-            <button type="button" className="btn btn-danger">
-              Logout
-            </button>
           </div>
         </div>
       </div>
@@ -94,4 +89,4 @@ class HandleEvent extends Component {
   }
 }
 
-export default HandleEvent;
+export default AddUser;
